@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Boogaloo&family=Cookie&family=Dancing+Script:wght@400..700&family=Kaushan+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rancho&family=Saira:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+}
+.containerWrapper {
+  width: 100%;
+  max-width: 1440px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.bg-white {
+  background-color: #ffffff;
+}
+
+.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.navbar {
+  padding: 0;
+}
+
+.nav-link {
+  padding: 10px;
+}
+
+#darkModeToggle {
+  padding: 5px 10px;
+  border: none;
+  background: transparent;
+}
+
+.cardParent {
+  display: flex;
+  gap: 25px;
+}
+
+.carddata {
+  border: 1px solid #ccd5d6;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  background-color: #f8f9fa;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.carddata img {
+  border-radius: 5px;
+  width: 300px;
+  height: 250px;
+}
+
+.dark-mode .carddata {
+  background-color: #1e1e1e;
+  border: 1px solid #444;
+}
+
+.dark-mode .carddata h5,
+.dark-mode .carddata p {
+  color: #ffffff;
+}
+
+.dark-mode .carddata .text-muted {
+  color: #ffffff;
+  font-weight: 500;
+  text-shadow: 0 0 0px rgb(255, 255, 255);
+}
+
+.sticky-top form {
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+}
+.sticky-top form input {
+  width: 85%;
+}
+.allCategory {
+  display: flex;
+}
+
+.px-5 {
+  padding-right: 2rem !important;
+  padding-left: 3rem !important;
+}
+.mb-5 {
+  margin-bottom: 1rem !important;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .search {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .btn-search {
+    width: 100%;
+  }
+
+  .cardParent {
+    overflow-x: scroll;
+  }
+
+  .carddata {
+    width: 90%;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .py-4 {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .carddata {
+    width: 95%;
+  }
+
+  h1,
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  .text-muted {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 410px) {
+  .carddata img {
+    width: 220px;
+    height: 175px;
+  }
+}
